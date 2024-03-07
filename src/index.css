@@ -1,0 +1,58 @@
+body{
+  background:url('https://i.pinimg.com/originals/d6/80/98/d680982ef04447ea9c05b05a703b443f.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+}
+
+.App {
+  background-color: #6e6e6e;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.converter-container {
+  /* height: 400px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type='number'],
+select {
+  margin: 8px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+}
+
+select {
+  flex: 1; /* Fill remaining space */
+  margin-left: 10px; /* Add some spacing between inputs */
+}
+
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number']:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 5px #fff;
+}
+
+.result-container {
+  font-size: 18px;
+}
